@@ -133,7 +133,7 @@ public class NetworksSlimefunItemStacks {
 
         RADIOACTIVE_OPTIC_STAR = Theme.themedSlimefunItemStack(
             "NTW_RADIOACTIVE_OPTIC_STAR",
-            getPreEnchantedItemStack(Material.NETHER_STAR, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.NETHER_STAR, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.CRAFTING,
             "Radioactive Optic Star",
             "A crystalline star structure that",
@@ -142,7 +142,7 @@ public class NetworksSlimefunItemStacks {
 
         SHRINKING_BASE = Theme.themedSlimefunItemStack(
             "NTW_SHRINKING_BASE",
-            getPreEnchantedItemStack(Material.PISTON, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.PISTON, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.CRAFTING,
             "Shrinking Base",
             "An advanced construct able to make",
@@ -160,7 +160,7 @@ public class NetworksSlimefunItemStacks {
 
         ADVANCED_NANOBOTS = Theme.themedSlimefunItemStack(
             "NTW_ADVANCED_NANOBOTS",
-            getPreEnchantedItemStack(Material.MELON_SEEDS, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.MELON_SEEDS, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.CRAFTING,
             "Advanced Nanobots",
             "Teeny Tiny little bots that can",
@@ -188,7 +188,7 @@ public class NetworksSlimefunItemStacks {
 
         PRISTINE_AI_CORE = Theme.themedSlimefunItemStack(
             "NTW_PRISTINE_AI_CORE",
-            getPreEnchantedItemStack(Material.TUBE_CORAL_BLOCK, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.TUBE_CORAL_BLOCK, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.CRAFTING,
             "Pristine A.I. Core",
             "A perfected artificial intelligence",
@@ -197,7 +197,7 @@ public class NetworksSlimefunItemStacks {
 
         INTERDIMENSIONAL_PRESENCE = Theme.themedSlimefunItemStack(
             "NTW_INTERDIMENSIONAL_PRESENCE",
-            getPreEnchantedItemStack(Material.ARMOR_STAND, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.ARMOR_STAND, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.CRAFTING,
             "Interdimensional Presence",
             "An artificial intelligence that has",
@@ -714,7 +714,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_REMOTE_ULTIMATE = Theme.themedSlimefunItemStack(
             "NTW_REMOTE_ULTIMATE",
-            getPreEnchantedItemStack(Material.GLOW_ITEM_FRAME, true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
+            getPreEnchantedItemStack(Material.GLOW_ITEM_FRAME, true, new Pair<>(Enchantment.POWER, 1)),
             Theme.TOOL,
             "Network Remote Ultimate",
             "Opens a bound grid wirelessly.",
@@ -782,7 +782,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_RAKE_3 = Theme.themedSlimefunItemStack(
             "NTW_RAKE_3",
-            getPreEnchantedItemStack(Material.WEEPING_VINES, true, new Pair<>(Enchantment.LUCK, 1)),
+            getPreEnchantedItemStack(Material.WEEPING_VINES, true, new Pair<>(Enchantment.LUCK_OF_THE_SEA, 1)),
             Theme.TOOL,
             "Network Rake (3)",
             "Right click a Network Object to",
@@ -793,7 +793,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_DEBUG_STICK = Theme.themedSlimefunItemStack(
             "NTW_DEBUG_STICK",
-            getPreEnchantedItemStack(Material.STICK, true, new Pair<>(Enchantment.LUCK, 1)),
+            getPreEnchantedItemStack(Material.STICK, true, new Pair<>(Enchantment.LUCK_OF_THE_SEA, 1)),
             Theme.TOOL,
             "Network Debug Stick",
             "Right click a Network Object to",

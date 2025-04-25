@@ -69,7 +69,7 @@ public class NetheoPlants {
         final Networks plugin = Networks.getInstance();
 
         new HarvestableSeed(STONE_CHUNK_SEED)
-            .setHarvestingResult(SlimefunItems.STONE_CHUNK)
+            .setHarvestingResult(SlimefunItems.STONE_CHUNK.item())
             .setGrowth(new Growth(GrowthStages.FUNGAL_PURPLE, Placements.NETHER_GRASS_AND_UP, 5, 0.05))
             .addBreedingPair(Stacks.STONEY_SEED.getItemId(), Stacks.METALLIC_SEED.getItemId(), 0.2, 0.1)
             .addFlavourProfile(0, 0, 0, 0, 0)
@@ -82,21 +82,21 @@ public class NetheoPlants {
             .tryRegister(plugin);
 
         new HarvestableSeed(SYNTHETIC_EMERALD_SEED)
-            .setHarvestingResult(SlimefunItems.SYNTHETIC_EMERALD)
+            .setHarvestingResult(SlimefunItems.SYNTHETIC_EMERALD.item())
             .setGrowth(new Growth(GrowthStages.VINEY_GREEN, Placements.VORACIOUS_AND_UP, 20, 0.05))
             .addBreedingPair(SYNTHETIC_SEED.getItemId(), Stacks.VALUABLE_SEED.getItemId(), 0.01, 0.001)
             .addFlavourProfile(0, 15, 0, 0, 0)
             .tryRegister(plugin);
 
         new HarvestableSeed(SYNTHETIC_DIAMOND_SEED)
-            .setHarvestingResult(SlimefunItems.SYNTHETIC_DIAMOND)
+            .setHarvestingResult(SlimefunItems.SYNTHETIC_DIAMOND.item())
             .setGrowth(new Growth(GrowthStages.VINEY_BLUE, Placements.VORACIOUS_AND_UP, 20, 0.05))
             .addBreedingPair(SYNTHETIC_SEED.getItemId(), Stacks.PERFECTION_SEED.getItemId(), 0.01, 0.001)
             .addFlavourProfile(15, 0, 0, 0, 0)
             .tryRegister(plugin);
 
         new HarvestableSeed(FRAGMENTED_SEED)
-            .setHarvestingResult(StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SYNTHETIC_EMERALD_SHARD, 9))
+            .setHarvestingResult(StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SYNTHETIC_EMERALD_SHARD.item(), 9))
             .setGrowth(new Growth(GrowthStages.VINEY_GREEN, Placements.VORACIOUS_AND_UP, 10, 0.005))
             .addBreedingPair(SYNTHETIC_SEED.getItemId(), Stacks.PERFECTION_SEED.getItemId(), 0.01, 0.001)
             .addFlavourProfile(10, 0, 0, 0, 0)

@@ -121,11 +121,11 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.SYNTHETIC_EMERALD_SHARD,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.STONE_CHUNK, SlimefunItems.SYNTHETIC_EMERALD, null,
-                SlimefunItems.SYNTHETIC_EMERALD, null, null,
+                SlimefunItems.STONE_CHUNK.item(), SlimefunItems.SYNTHETIC_EMERALD.item(), null,
+                SlimefunItems.SYNTHETIC_EMERALD.item(), null, null,
                 null, null, null
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SYNTHETIC_EMERALD_SHARD, 3)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SYNTHETIC_EMERALD_SHARD.item(), 3)
         );
 
         OPTIC_GLASS = new UnplaceableBlock(
@@ -137,7 +137,7 @@ public class NetworkSlimefunItems {
                 glass, SYNTHETIC_EMERALD_SHARD.getItem(), glass,
                 glass, glass, glass
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.OPTIC_GLASS, 8)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.OPTIC_GLASS.item(), 8)
         );
 
         OPTIC_CABLE = new UnplaceableBlock(
@@ -146,10 +146,10 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(),
-                SlimefunItems.COPPER_WIRE, SYNTHETIC_EMERALD_SHARD.getItem(), SlimefunItems.COPPER_WIRE,
+                SlimefunItems.COPPER_WIRE.item(), SYNTHETIC_EMERALD_SHARD.getItem(), SlimefunItems.COPPER_WIRE.item(),
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem()
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.OPTIC_CABLE, 16)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.OPTIC_CABLE.item(), 16)
         );
 
         OPTIC_STAR = new UnplaceableBlock(
@@ -168,9 +168,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.RADIOACTIVE_OPTIC_STAR,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.BLISTERING_INGOT_3,
+                SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.BLISTERING_INGOT_3.item(),
                 OPTIC_CABLE.getItem(), OPTIC_STAR.getItem(), OPTIC_CABLE.getItem(),
-                SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.BLISTERING_INGOT_3
+                SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.BLISTERING_INGOT_3.item()
             }
         );
 
@@ -179,9 +179,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.SHRINKING_BASE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.CORINTHIAN_BRONZE_INGOT, SlimefunItems.ANDROID_INTERFACE_ITEMS, SlimefunItems.CORINTHIAN_BRONZE_INGOT,
+                SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), SlimefunItems.ANDROID_INTERFACE_ITEMS.item(), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(),
                 OPTIC_CABLE.getItem(), RADIOACTIVE_OPTIC_STAR.getItem(), OPTIC_CABLE.getItem(),
-                SlimefunItems.CORINTHIAN_BRONZE_INGOT, SlimefunItems.ANDROID_MEMORY_CORE, SlimefunItems.CORINTHIAN_BRONZE_INGOT
+                SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), SlimefunItems.ANDROID_MEMORY_CORE.item(), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item()
             }
         );
 
@@ -190,9 +190,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.SIMPLE_NANOBOTS,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SHRINKING_BASE.getItem(), SlimefunItems.PROGRAMMABLE_ANDROID
+                SHRINKING_BASE.getItem(), SlimefunItems.PROGRAMMABLE_ANDROID.item()
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SIMPLE_NANOBOTS, 4)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.SIMPLE_NANOBOTS.item(), 4)
         );
 
         ADVANCED_NANOBOTS = new UnplaceableBlock(
@@ -200,9 +200,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.ADVANCED_NANOBOTS,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SHRINKING_BASE.getItem(), SlimefunItems.PROGRAMMABLE_ANDROID_3
+                SHRINKING_BASE.getItem(), SlimefunItems.PROGRAMMABLE_ANDROID_3.item()
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.ADVANCED_NANOBOTS, 4)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.ADVANCED_NANOBOTS.item(), 4)
         );
 
         AI_CORE = new UnplaceableBlock(
@@ -210,9 +210,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.AI_CORE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.BASIC_CIRCUIT_BOARD, SlimefunItems.ANDROID_MEMORY_CORE, SlimefunItems.BASIC_CIRCUIT_BOARD,
-                SlimefunItems.BASIC_CIRCUIT_BOARD, ADVANCED_NANOBOTS.getItem(), SlimefunItems.BASIC_CIRCUIT_BOARD,
-                SlimefunItems.BASIC_CIRCUIT_BOARD, SlimefunItems.ANDROID_MEMORY_CORE, SlimefunItems.BASIC_CIRCUIT_BOARD
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ANDROID_MEMORY_CORE.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(),
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), ADVANCED_NANOBOTS.getItem(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(),
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ANDROID_MEMORY_CORE.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item()
             }
         );
 
@@ -221,9 +221,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.EMPOWERED_AI_CORE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.ADVANCED_CIRCUIT_BOARD, RADIOACTIVE_OPTIC_STAR.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD,
-                SlimefunItems.ADVANCED_CIRCUIT_BOARD, AI_CORE.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD,
-                SlimefunItems.ADVANCED_CIRCUIT_BOARD, RADIOACTIVE_OPTIC_STAR.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), RADIOACTIVE_OPTIC_STAR.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(),
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), AI_CORE.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(),
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), RADIOACTIVE_OPTIC_STAR.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD.item()
             }
         );
 
@@ -232,9 +232,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.PRISTINE_AI_CORE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.NEPTUNIUM, SlimefunItems.DAMASCUS_STEEL_MULTI_TOOL, SlimefunItems.NEPTUNIUM,
-                SlimefunItems.NEPTUNIUM, EMPOWERED_AI_CORE.getItem(), SlimefunItems.NEPTUNIUM,
-                SlimefunItems.NEPTUNIUM, SlimefunItems.ELECTRIFIED_CRUCIBLE_3, SlimefunItems.NEPTUNIUM
+                SlimefunItems.NEPTUNIUM.item(), SlimefunItems.DAMASCUS_STEEL_MULTI_TOOL.item(), SlimefunItems.NEPTUNIUM.item(),
+                SlimefunItems.NEPTUNIUM.item(), EMPOWERED_AI_CORE.getItem(), SlimefunItems.NEPTUNIUM.item(),
+                SlimefunItems.NEPTUNIUM.item(), SlimefunItems.ELECTRIFIED_CRUCIBLE_3.item(), SlimefunItems.NEPTUNIUM.item()
             }
         );
 
@@ -243,9 +243,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.INTERDIMENSIONAL_PRESENCE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.PLUTONIUM, SlimefunItems.REINFORCED_ALLOY_MULTI_TOOL, SlimefunItems.PLUTONIUM,
-                SlimefunItems.PLUTONIUM, PRISTINE_AI_CORE.getItem(), SlimefunItems.PLUTONIUM,
-                SlimefunItems.PLUTONIUM, SlimefunItems.NETHER_STAR_REACTOR, SlimefunItems.PLUTONIUM
+                SlimefunItems.PLUTONIUM.item(), SlimefunItems.REINFORCED_ALLOY_MULTI_TOOL.item(), SlimefunItems.PLUTONIUM.item(),
+                SlimefunItems.PLUTONIUM.item(), PRISTINE_AI_CORE.getItem(), SlimefunItems.PLUTONIUM.item(),
+                SlimefunItems.PLUTONIUM.item(), SlimefunItems.NETHER_STAR_REACTOR.item(), SlimefunItems.PLUTONIUM.item()
             }
         );
 
@@ -255,7 +255,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MANAGER, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MANAGER.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             }
         );
@@ -266,10 +266,10 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_CONNECTOR_NODE, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_CONNECTOR_NODE.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             },
-            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.NETWORK_BRIDGE, 8)
+            StackUtils.getAsQuantity(NetworksSlimefunItemStacks.NETWORK_BRIDGE.item(), 8)
         );
 
         NETWORK_MONITOR = new NetworkMonitor(
@@ -278,7 +278,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MOTOR, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MOTOR.item(), OPTIC_CABLE.getItem(),
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
             }
         );
@@ -289,7 +289,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_INPUT_NODE, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_INPUT_NODE.item(), OPTIC_CABLE.getItem(),
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
             }
         );
@@ -300,7 +300,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_OUTPUT_NODE_2, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_OUTPUT_NODE_2.item(), OPTIC_CABLE.getItem(),
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
             }
         );
@@ -332,9 +332,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_CONTROL_X,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY, OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_GRABBER, OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY.item(), OPTIC_GLASS.getItem(),
+                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_GRABBER.item(), OPTIC_CABLE.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1.item(), OPTIC_GLASS.getItem(),
             }
         );
 
@@ -343,9 +343,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_CONTROL_V,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY, OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_PUSHER, OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY.item(), OPTIC_GLASS.getItem(),
+                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_PUSHER.item(), OPTIC_CABLE.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1.item(), OPTIC_GLASS.getItem(),
             }
         );
 
@@ -354,9 +354,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_VACUUM,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY, OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_IMPORT, OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY.item(), OPTIC_GLASS.getItem(),
+                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_IMPORT.item(), OPTIC_CABLE.getItem(),
+                OPTIC_GLASS.getItem(), NetworksSlimefunItemStacks.NETWORK_POWER_OUTLET_1.item(), OPTIC_GLASS.getItem(),
             }
         );
 
@@ -410,7 +410,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.TRASH_CAN, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.TRASH_CAN.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             }
         );
@@ -464,9 +464,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_WORKBENCH,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), OPTIC_GLASS.getItem(),
                 OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), OPTIC_GLASS.getItem()
             }
         );
 
@@ -476,7 +476,7 @@ public class NetworkSlimefunItems {
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MOTOR, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.CARGO_MOTOR.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[0]
@@ -487,9 +487,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_2,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.ALUMINUM_BRASS_INGOT, OPTIC_GLASS.getItem(),
-                SlimefunItems.SYNTHETIC_SAPPHIRE, NETWORK_QUANTUM_STORAGE_1.getItem(), SlimefunItems.SYNTHETIC_SAPPHIRE,
-                OPTIC_GLASS.getItem(), SlimefunItems.ALUMINUM_BRASS_INGOT, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.ALUMINUM_BRASS_INGOT.item(), OPTIC_GLASS.getItem(),
+                SlimefunItems.SYNTHETIC_SAPPHIRE.item(), NETWORK_QUANTUM_STORAGE_1.getItem(), SlimefunItems.SYNTHETIC_SAPPHIRE.item(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ALUMINUM_BRASS_INGOT.item(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[1]
         );
@@ -499,9 +499,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_3,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.CORINTHIAN_BRONZE_INGOT, OPTIC_GLASS.getItem(),
-                SlimefunItems.SYNTHETIC_DIAMOND, NETWORK_QUANTUM_STORAGE_2.getItem(), SlimefunItems.SYNTHETIC_DIAMOND,
-                OPTIC_GLASS.getItem(), SlimefunItems.CORINTHIAN_BRONZE_INGOT, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), OPTIC_GLASS.getItem(),
+                SlimefunItems.SYNTHETIC_DIAMOND.item(), NETWORK_QUANTUM_STORAGE_2.getItem(), SlimefunItems.SYNTHETIC_DIAMOND.item(),
+                OPTIC_GLASS.getItem(), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[2]
         );
@@ -511,9 +511,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_4,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.HARDENED_METAL_INGOT, OPTIC_GLASS.getItem(),
-                SlimefunItems.SYNTHETIC_EMERALD, NETWORK_QUANTUM_STORAGE_3.getItem(), SlimefunItems.SYNTHETIC_EMERALD,
-                OPTIC_GLASS.getItem(), SlimefunItems.HARDENED_METAL_INGOT, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.HARDENED_METAL_INGOT.item(), OPTIC_GLASS.getItem(),
+                SlimefunItems.SYNTHETIC_EMERALD.item(), NETWORK_QUANTUM_STORAGE_3.getItem(), SlimefunItems.SYNTHETIC_EMERALD.item(),
+                OPTIC_GLASS.getItem(), SlimefunItems.HARDENED_METAL_INGOT.item(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[3]
         );
@@ -523,9 +523,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_5,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.REINFORCED_ALLOY_INGOT, OPTIC_GLASS.getItem(),
-                SlimefunItems.POWER_CRYSTAL, NETWORK_QUANTUM_STORAGE_4.getItem(), SlimefunItems.POWER_CRYSTAL,
-                OPTIC_GLASS.getItem(), SlimefunItems.REINFORCED_ALLOY_INGOT, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.REINFORCED_ALLOY_INGOT.item(), OPTIC_GLASS.getItem(),
+                SlimefunItems.POWER_CRYSTAL.item(), NETWORK_QUANTUM_STORAGE_4.getItem(), SlimefunItems.POWER_CRYSTAL.item(),
+                OPTIC_GLASS.getItem(), SlimefunItems.REINFORCED_ALLOY_INGOT.item(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[4]
         );
@@ -535,9 +535,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_6,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                SlimefunItems.STEEL_PLATE, SlimefunItems.BLISTERING_INGOT, SlimefunItems.STEEL_PLATE,
-                SlimefunItems.CARGO_MOTOR, NETWORK_QUANTUM_STORAGE_5.getItem(), SlimefunItems.CARGO_MOTOR,
-                SlimefunItems.STEEL_PLATE, SlimefunItems.BLISTERING_INGOT, SlimefunItems.STEEL_PLATE
+                SlimefunItems.STEEL_PLATE.item(), SlimefunItems.BLISTERING_INGOT.item(), SlimefunItems.STEEL_PLATE.item(),
+                SlimefunItems.CARGO_MOTOR.item(), NETWORK_QUANTUM_STORAGE_5.getItem(), SlimefunItems.CARGO_MOTOR.item(),
+                SlimefunItems.STEEL_PLATE.item(), SlimefunItems.BLISTERING_INGOT.item(), SlimefunItems.STEEL_PLATE.item()
             },
             NetworkQuantumStorage.getSizes()[5]
         );
@@ -547,9 +547,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_7,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                SlimefunItems.REINFORCED_PLATE, SlimefunItems.BLISTERING_INGOT_2, SlimefunItems.REINFORCED_PLATE,
-                SlimefunItems.CARGO_CONNECTOR_NODE, NETWORK_QUANTUM_STORAGE_6.getItem(), SlimefunItems.CARGO_CONNECTOR_NODE,
-                SlimefunItems.REINFORCED_PLATE, SlimefunItems.BLISTERING_INGOT_2, SlimefunItems.REINFORCED_PLATE
+                SlimefunItems.REINFORCED_PLATE.item(), SlimefunItems.BLISTERING_INGOT_2.item(), SlimefunItems.REINFORCED_PLATE.item(),
+                SlimefunItems.CARGO_CONNECTOR_NODE.item(), NETWORK_QUANTUM_STORAGE_6.getItem(), SlimefunItems.CARGO_CONNECTOR_NODE.item(),
+                SlimefunItems.REINFORCED_PLATE.item(), SlimefunItems.BLISTERING_INGOT_2.item(), SlimefunItems.REINFORCED_PLATE.item()
             },
             NetworkQuantumStorage.getSizes()[6]
         );
@@ -559,9 +559,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_QUANTUM_STORAGE_8,
             NetworkQuantumWorkbench.TYPE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.BLISTERING_INGOT_3, OPTIC_GLASS.getItem(),
-                SlimefunItems.CARGO_MANAGER, NETWORK_QUANTUM_STORAGE_7.getItem(), SlimefunItems.CARGO_MANAGER,
-                OPTIC_GLASS.getItem(), SlimefunItems.BLISTERING_INGOT_3, OPTIC_GLASS.getItem()
+                OPTIC_GLASS.getItem(), SlimefunItems.BLISTERING_INGOT_3.item(), OPTIC_GLASS.getItem(),
+                SlimefunItems.CARGO_MANAGER.item(), NETWORK_QUANTUM_STORAGE_7.getItem(), SlimefunItems.CARGO_MANAGER.item(),
+                OPTIC_GLASS.getItem(), SlimefunItems.BLISTERING_INGOT_3.item(), OPTIC_GLASS.getItem()
             },
             NetworkQuantumStorage.getSizes()[7]
         );
@@ -572,7 +572,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), SlimefunItems.MEDIUM_CAPACITOR, OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), SlimefunItems.MEDIUM_CAPACITOR.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             },
             1000
@@ -584,7 +584,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_CAPACITOR_1.getItem(), NETWORK_CAPACITOR_1.getItem(), NETWORK_CAPACITOR_1.getItem(),
-                NETWORK_CAPACITOR_1.getItem(), SlimefunItems.BIG_CAPACITOR, NETWORK_CAPACITOR_1.getItem(),
+                NETWORK_CAPACITOR_1.getItem(), SlimefunItems.BIG_CAPACITOR.item(), NETWORK_CAPACITOR_1.getItem(),
                 NETWORK_CAPACITOR_1.getItem(), NETWORK_CAPACITOR_1.getItem(), NETWORK_CAPACITOR_1.getItem(),
             },
             10000
@@ -596,7 +596,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_CAPACITOR_2.getItem(), NETWORK_CAPACITOR_2.getItem(), NETWORK_CAPACITOR_2.getItem(),
-                NETWORK_CAPACITOR_2.getItem(), SlimefunItems.LARGE_CAPACITOR, NETWORK_CAPACITOR_2.getItem(),
+                NETWORK_CAPACITOR_2.getItem(), SlimefunItems.LARGE_CAPACITOR.item(), NETWORK_CAPACITOR_2.getItem(),
                 NETWORK_CAPACITOR_2.getItem(), NETWORK_CAPACITOR_2.getItem(), NETWORK_CAPACITOR_2.getItem(),
             },
             100000
@@ -608,7 +608,7 @@ public class NetworkSlimefunItems {
                 RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[]{
                         NETWORK_CAPACITOR_3.getItem(), NETWORK_CAPACITOR_3.getItem(), NETWORK_CAPACITOR_3.getItem(),
-                        NETWORK_CAPACITOR_3.getItem(), SlimefunItems.CARBONADO_EDGED_CAPACITOR, NETWORK_CAPACITOR_3.getItem(),
+                        NETWORK_CAPACITOR_3.getItem(), SlimefunItems.CARBONADO_EDGED_CAPACITOR.item(), NETWORK_CAPACITOR_3.getItem(),
                         NETWORK_CAPACITOR_3.getItem(), NETWORK_CAPACITOR_3.getItem(), NETWORK_CAPACITOR_3.getItem(),
                 },
                 1000000
@@ -620,7 +620,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR.item(), OPTIC_GLASS.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(),
             },
             500
@@ -632,7 +632,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_POWER_OUTLET_1.getItem(), OPTIC_GLASS.getItem(), NETWORK_POWER_OUTLET_1.getItem(),
-                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR.item(), OPTIC_GLASS.getItem(),
                 NETWORK_POWER_OUTLET_1.getItem(), OPTIC_GLASS.getItem(), NETWORK_POWER_OUTLET_1.getItem(),
             },
             2000
@@ -643,9 +643,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_POWER_DISPLAY,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_REGULATOR, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_REGULATOR.item(), OPTIC_GLASS.getItem(),
                 OPTIC_CABLE.getItem(), NETWORK_CAPACITOR_1.getItem(), OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ENERGY_CONNECTOR.item(), OPTIC_GLASS.getItem(),
             }
         );
 
@@ -654,9 +654,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_RECIPE_ENCODER,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.BASIC_CIRCUIT_BOARD, SlimefunItems.ANDROID_MEMORY_CORE, SlimefunItems.BASIC_CIRCUIT_BOARD,
-                SlimefunItems.BASIC_CIRCUIT_BOARD, SlimefunItems.ENHANCED_AUTO_CRAFTER, SlimefunItems.BASIC_CIRCUIT_BOARD,
-                SlimefunItems.BASIC_CIRCUIT_BOARD, SlimefunItems.CARGO_MOTOR, SlimefunItems.BASIC_CIRCUIT_BOARD
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ANDROID_MEMORY_CORE.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(),
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ENHANCED_AUTO_CRAFTER.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(),
+                SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.CARGO_MOTOR.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item()
             }
         );
 
@@ -667,7 +667,7 @@ public class NetworkSlimefunItems {
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
                 OPTIC_CABLE.getItem(), SIMPLE_NANOBOTS.getItem(), OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), SlimefunItems.ENHANCED_AUTO_CRAFTER, OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), SlimefunItems.ENHANCED_AUTO_CRAFTER.item(), OPTIC_GLASS.getItem(),
             },
             64,
             false
@@ -702,7 +702,7 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_PROBE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                null, SlimefunItems.DURALUMIN_INGOT, null,
+                null, SlimefunItems.DURALUMIN_INGOT.item(), null,
                 null, OPTIC_CABLE.getItem(), null,
                 null, NETWORK_BRIDGE.getItem(), null
             }

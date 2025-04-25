@@ -123,7 +123,7 @@ public class NetworkRoot extends NetworkNode {
             for (int x = 0; x <= 1; x++) {
                 for (int y = 0; y <= 1; y++) {
                     for (int z = 0; z <= 1; z++) {
-                        loc.getWorld().spawnParticle(Particle.EXPLOSION_NORMAL, loc.clone().add(x, y, z), 0);
+                        loc.getWorld().spawnParticle(Particle.EXPLOSION, loc.clone().add(x, y, z), 0);
                     }
                 }
             }
